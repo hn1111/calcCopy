@@ -125,7 +125,6 @@ void Widget::on_listWidget_itemDoubleClicked(QListWidgetItem *item)
 
 void Widget::on_lineEdit_textEdited(const QString &arg1)
 {
-    qDebug() << __func__;
     QString text = QString(ui->lineEdit->text());
     text.replace('*', MULTIPLICATION);
     text.replace('/', DIVISION);
